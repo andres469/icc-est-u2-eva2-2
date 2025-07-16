@@ -27,11 +27,11 @@ public class Book implements Comparable<Book> {
 
     @Override
     public int compareTo(Book o) {
-        // Título descendente
+
         int compTitulo = o.titulo.compareTo(this.titulo);
         if (compTitulo != 0) return compTitulo;
 
-        // Año ascendente
+
         int compAnio = Integer.compare(this.anio, o.anio);
         return compAnio;
     }
@@ -46,7 +46,7 @@ public class Book implements Comparable<Book> {
 
     @Override
     public int hashCode() {
-        return Objects.hash(titulo, anio); // Solo título y año
+        return Objects.hash(titulo, anio); 
     }
 
     @Override
